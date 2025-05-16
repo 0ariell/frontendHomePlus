@@ -17,5 +17,5 @@
     "types": ["vite/client", "react"]
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "src/users"] // <<< excluimos tu backend
+  "exclude": ["node_modules", "dist", "src/users"]
 }
