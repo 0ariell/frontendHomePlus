@@ -1,29 +1,21 @@
+// tsconfig.json
 {
   "compilerOptions": {
     "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
     "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-
-    //  👇 baseUrl + paths para que `@/foo` apunte a `src/foo`
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
     },
-
-    // 👇 para que TypeScript reconozca JSX de React 18+
-    "jsx": "react-jsx",
-    "types": ["vite/client"]
+    "types": ["vite/client", "react"]
   },
-
-  // 👇 solo incluí tu carpeta src; excluí todo lo demás
   "include": ["src"],
-  "exclude": ["node_modules", "dist", "**/*.test.ts", "../home-plus-backend"]
+  "exclude": ["node_modules", "dist", "src/users"] // <<< excluimos tu backend
 }
