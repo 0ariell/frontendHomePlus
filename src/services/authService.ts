@@ -1,5 +1,5 @@
 // src/services/authService.ts
-import api from "./api";
+import { api } from "./api";
 
 export interface RegisterDTO {
   firstName: string;

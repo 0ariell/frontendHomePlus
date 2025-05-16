@@ -12,7 +12,7 @@ import {
     ServiceRequestDTO,
     updateServiceRequest,
     deleteServiceRequest
-} from '@/services/serviceService';
+} from '@/services/serviceRequests';
 
 export default function ServiceRequests() {
     const [title, setTitle] = useState('');

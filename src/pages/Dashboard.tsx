@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from '@/components/Card';
+import { Card } undefined;
 
 export default function Dashboard() {
     return (

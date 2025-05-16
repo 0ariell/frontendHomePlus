@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from 'react';
-import { Input } from '@/components/Input';
-import { Button } from '@/components/Button';
+import { Input } undefined;
+import { Button } undefined;
 
 const API_BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:3000/api';
 

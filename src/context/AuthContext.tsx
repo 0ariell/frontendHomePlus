@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
-import { apiPost } from '@/services/api';
+import { apiPost } from '../services/api';
 
 interface User { id: number; email: string; firstName: string; lastName: string; }
 interface RegisterInput { firstName: string; lastName: string; email: string; password: string; }
